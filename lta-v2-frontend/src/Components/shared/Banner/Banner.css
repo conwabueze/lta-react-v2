@@ -1,0 +1,108 @@
+  .Banner {
+      position: relative;
+      z-index: 1;
+  }
+
+  .Banner-img-container {
+      width: 100%;
+      height: 700px;
+  }
+
+  .Banner-img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+  }
+
+  .Banner-header-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*align-items: center;*/
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 900px;
+      height: 100%;
+  }
+
+  .Banner-header-container>* {
+      text-transform: uppercase;
+      color: #b9899f;
+      margin: 12px 0;
+  }
+
+  .Banner-header-container h1 {
+      font-size: 5rem;
+  }
+
+  .Banner-header-container h2 {
+      font-size: 3rem;
+  }
+
+  .Banner-header-container h3 {
+      font-size: 1.5rem;
+  }
+
+  .Banner-header-container h4 {
+    font-size: 1rem;
+  }
+
+  .Banner-header-container h4 span {
+      font-size: 1.5em;
+      text-decoration: underline;
+  }
+
+  /*Edits size of header texts for tablets*/
+  @media (max-width: 1000px) {
+      .Banner-header-container h1 {
+          font-size: 4rem;
+      }
+
+      .Banner-header-container h2 {
+          font-size: 2.5rem;
+      }
+
+      .Banner-header-container h3 {
+          font-size: 1.25rem;
+      }
+
+      .Banner-header-container h4 {
+        font-size: 0.9rem;
+      }
+    
+      .Banner-header-container h4 span {
+          font-size: 1.5em;
+          text-decoration: underline;
+      }
+  }
+
+  /*Edits size of header texts for phones*/
+  @media (max-width: 600px) {
+
+      .Banner-header-container h1 {
+          font-size: 3rem;
+      }
+
+      .Banner-header-container h2 {
+          font-size: 1.8rem;
+      }
+
+      .Banner-header-container h3 {
+          font-size: 1.5rem;
+          display: none;
+      }
+
+      .Banner-header-container h4 {
+        font-size: 1rem;
+      }
+    
+      .Banner-header-container h4 span {
+          font-size: 1.5em;
+          text-decoration: underline;
+      }
+  }

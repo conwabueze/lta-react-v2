@@ -1,0 +1,97 @@
+.NavBar {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.NavBarContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.NavBarLogo {
+    width: 120px;
+}
+
+.NavBar ul {
+    display: flex;
+}
+
+.NavBar ul>* {
+    list-style: none;
+}
+
+.NavBar ul li>* {
+    text-transform: uppercase;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #777;
+    font-size: 1.1rem;
+}
+
+/*Edits size of header texts for tablets*/
+@media (max-width: 1200px) {
+    .NavBarContainer {
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+
+    .NavBarHamburgerBtn {
+        display: block;
+        background: 0;
+        border: 0;
+        font-size: 2.8rem;
+        color: #660935;
+        height: 120px;
+        
+    }
+
+    .NavBarCloseBtn{
+        color: #ffffff;
+        background-color: #660935;
+        border: 0;
+        height: 70px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    /*Create all white overlay to present menu items*/
+    .MobileNavLinksContainer{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    /*Layout the nav links in the dead center of overlay in a column format*/
+    .MobileNavLinksContainer ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+    }
+    /*slect 2nd li element in nav links to create spacing*/
+    .MobileNavLinksContainer ul li:nth-child(2){
+        margin: 4rem 0;
+    }
+
+    /*modfy links for better spacing and sizing*/
+    .MobileNavLinksContainer ul li a{
+        font-size: 1.5rem;
+ 
+    }
+
+}

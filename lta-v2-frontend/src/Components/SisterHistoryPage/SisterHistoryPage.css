@@ -1,0 +1,33 @@
+.SisterHistoryNavBar{
+    
+    margin: 0 2rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.SisterHistoryNavBar::-webkit-scrollbar {
+    /* Style the scrollbar track */
+    height: 4px;
+    background-color: #660935;
+  }
+
+.SisterHistoryNavBar ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+}
+
+.SisterHistoryNavBar li{
+    margin: 0 1rem;
+    
+}
+
+
+.SisterHistoryNavBar ul li>*{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #660935; 
+}

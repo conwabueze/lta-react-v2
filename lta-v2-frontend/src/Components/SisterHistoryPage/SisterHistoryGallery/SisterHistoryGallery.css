@@ -1,0 +1,32 @@
+.SisterHistoryGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    max-width: 900px;
+    margin: 3rem auto;
+    grid-row-gap: 2em;
+}
+
+.SisterHistoryGalleryCard {
+    text-align: center;
+    text-decoration: none;
+    color: #660935;
+}
+
+.SisterHistoryGalleryCard:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.SisterHistoryGalleryCard img {
+    height: 300px;
+    width: 240px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.SisterHistoryGalleryCard h1 {
+    text-transform: uppercase;
+    margin: 0.2em 0;
+    text-align: center;
+}

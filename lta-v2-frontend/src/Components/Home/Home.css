@@ -1,0 +1,43 @@
+.Home-content {
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.Home-content-header {
+    font-size: 4.125rem;
+    text-transform: uppercase;
+    margin: 4rem 0;
+}
+
+.Home-content-body {
+    font-size: 1.35rem;
+    line-height: 2.2em;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+
+/*Edits size of header texts for tablets*/
+@media (max-width: 1200px) {
+
+    .Home-content {
+        margin: 0 6rem;
+    }
+    .Home-content-header{
+        font-size: 4rem;
+        margin: 2rem 0;
+        line-height: 90px;
+    }
+    
+}
+/*Edits size of header texts for mobile*/
+@media (max-width: 600px) {
+    .Home-content {
+        margin: 0 2.2rem;
+    }
+    .Home-content-header{
+        font-size: 3rem;
+        margin: 2rem 0;
+        line-height: 70px;
+    }
+}
